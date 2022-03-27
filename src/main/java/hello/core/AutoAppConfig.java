@@ -17,8 +17,8 @@ import org.springframework.context.annotation.FilterType;
 ) // 기존에 만든 AppConfig등 Configuration 어노테이션들을 예외시키는 코드(테스트를 위해)
 public class AutoAppConfig {
 
-    @Bean(name = "memoryMemberRepository")
+/*    @Bean(name = "memoryMemberRepository")
     MemberRepository memberRepository(){
         return new MemoryMemberRepository();
-    }
+    }*/
 }
