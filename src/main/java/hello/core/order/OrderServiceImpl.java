@@ -1,5 +1,6 @@
 package hello.core.order;
 
+import hello.core.annotation.MainDiscountPolicy;
 import hello.core.discount.DiscountPolicy;
 import hello.core.member.Member;
 import hello.core.member.MemberRepository;
@@ -17,7 +18,7 @@ public class OrderServiceImpl implements OrderService{
 
 //    @RequiredArgsConstructor 는 final로 선언된 변수들을 가지고 생성자를 자동생성해줌.. 그래서 아래의 생성자 주석처성
     @Autowired
-    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+    public OrderServiceImpl(MemberRepository memberRepository, @MainDiscountPolicy DiscountPolicy discountPolicy) {
         /*
             생성자가 하나면 자동 @Autowired 적용된다. (@Component , @Bean 일때)
          */
