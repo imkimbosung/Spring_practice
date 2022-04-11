@@ -14,3 +14,8 @@
 10. Next...
 
 이론적인 내용 정리 목표(4월)
+사전 준비물
+  Java 11, IDE: IntelliJ
+
+Project : Gradle Project
+  
